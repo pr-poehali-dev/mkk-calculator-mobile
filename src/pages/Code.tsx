@@ -244,7 +244,6 @@ const Code = () => {
           <span class="info-label">Платеж раз в месяц:</span>
           <span class="info-value highlight" id="monthlyPayment">2 987 руб</span>
         </div>
-        <a href="#" class="info-link" onclick="return false;">Правила и тарифы</a>
       </div>
     </div>
   </div>
