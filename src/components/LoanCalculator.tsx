@@ -34,7 +34,7 @@ export default function LoanCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-transparent flex items-center justify-center py-3 px-2.5 sm:p-6 md:p-8">
+    <div className="min-h-screen bg-transparent flex items-start sm:items-center justify-center px-2.5 pt-0 pb-3 sm:p-6 md:p-8">
       <div className="w-full max-w-xl">
         <div className="bg-card rounded-[1rem] sm:rounded-[1.75rem] shadow-lg sm:shadow-2xl p-4 sm:p-8 md:p-12 space-y-5 sm:space-y-10 border border-border/50">
           <div className="space-y-4 sm:space-y-8">
