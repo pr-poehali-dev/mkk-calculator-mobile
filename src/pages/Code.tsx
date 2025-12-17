@@ -14,8 +14,9 @@ const Code = () => {
 
 .loan-calculator-wrapper {
   font-family: 'Roboto', sans-serif;
-  background: transparent;
+  background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 50%, #ecfeff 100%);
   width: 100%;
+  padding: 20px 0;
 }
 
 .calculator-container {
@@ -28,9 +29,9 @@ const Code = () => {
 .calculator-card {
   background: #ffffff;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   padding: 30px 20px;
-  border: 1px solid #e8ecf1;
+  border: 1px solid rgba(147, 197, 253, 0.6);
 }
 
 .section {
@@ -56,7 +57,7 @@ const Code = () => {
 .section-value {
   font-size: 24px;
   font-weight: 700;
-  color: #4299e1;
+  color: #52b4ff;
 }
 
 .slider-container {
@@ -66,7 +67,7 @@ const Code = () => {
 .slider {
   width: 100%;
   height: 8px;
-  background: linear-gradient(to right, #4299e1 0%, #4299e1 var(--value), #e2e8f0 var(--value), #e2e8f0 100%);
+  background: linear-gradient(to right, #52b4ff 0%, #52b4ff var(--value), #e2e8f0 var(--value), #e2e8f0 100%);
   border-radius: 10px;
   outline: none;
   -webkit-appearance: none;
@@ -78,7 +79,7 @@ const Code = () => {
   appearance: none;
   width: 24px;
   height: 24px;
-  background: #4299e1;
+  background: #52b4ff;
   border: 4px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -88,7 +89,7 @@ const Code = () => {
 .slider::-moz-range-thumb {
   width: 24px;
   height: 24px;
-  background: #4299e1;
+  background: #52b4ff;
   border: 4px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
@@ -105,7 +106,7 @@ const Code = () => {
 
 .button {
   width: 100%;
-  background: #4299e1;
+  background: #52b4ff;
   color: white;
   border: none;
   border-radius: 50px;
@@ -114,13 +115,13 @@ const Code = () => {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+  box-shadow: 0 4px 12px rgba(82, 180, 255, 0.35);
   font-family: 'Montserrat', sans-serif;
 }
 
 .button:hover {
-  background: #3182ce;
-  box-shadow: 0 6px 16px rgba(66, 153, 225, 0.4);
+  background: #3da0ff;
+  box-shadow: 0 6px 16px rgba(82, 180, 255, 0.45);
   transform: translateY(-2px);
 }
 
@@ -129,7 +130,7 @@ const Code = () => {
 }
 
 .info-section {
-  background: #f7fafc;
+  background: linear-gradient(135deg, #eff6ff 0%, #ecfeff 100%);
   padding: 20px;
   border-radius: 0 0 20px 20px;
   margin: 25px -20px -30px -20px;
@@ -153,12 +154,12 @@ const Code = () => {
 }
 
 .info-value.highlight {
-  color: #4299e1;
+  color: #52b4ff;
   font-size: 16px;
 }
 
 .info-link {
-  color: #4299e1;
+  color: #52b4ff;
   text-decoration: none;
   font-size: 13px;
   font-weight: 500;
