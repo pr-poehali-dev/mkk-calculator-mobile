@@ -34,9 +34,9 @@ export default function LoanCalculator() {
   };
 
   return (
-    <div className="w-full bg-gradient-to-br from-blue-50 via-blue-100/50 to-cyan-50 py-0 px-2.5 sm:py-8 sm:px-4">
+    <div className="w-full bg-white sm:bg-gradient-to-br sm:from-blue-50 sm:via-blue-100/50 sm:to-cyan-50 py-0 px-0 sm:py-8 sm:px-4">
       <div className="w-full max-w-xl mx-auto">
-        <div className="bg-white rounded-[1rem] sm:rounded-[1.75rem] shadow-xl sm:shadow-2xl p-4 sm:p-8 md:p-10 space-y-5 sm:space-y-8 border-2 border-white">
+        <div className="bg-white rounded-none sm:rounded-[1.75rem] shadow-none sm:shadow-xl sm:shadow-2xl p-4 sm:p-8 md:p-10 space-y-5 sm:space-y-8 border-2 border-white">
           <div className="space-y-4 sm:space-y-8">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1.5 sm:gap-0">
               <h2 className="text-base sm:text-2xl md:text-3xl font-medium text-foreground leading-tight">Выберите сумму</h2>
@@ -97,7 +97,7 @@ export default function LoanCalculator() {
             Получить деньги
           </Button>
 
-          <div className="space-y-2 sm:space-y-3 pt-0.5 sm:pt-4 bg-gradient-to-br from-blue-50 to-cyan-50 -mx-4 sm:-mx-8 md:-mx-10 px-4 sm:px-8 md:px-10 pb-3 sm:pb-4 -mb-4 sm:-mb-8 md:-mb-10 rounded-b-[1rem] sm:rounded-b-[1.75rem]">
+          <div className="space-y-2 sm:space-y-3 pt-0.5 sm:pt-4 bg-white sm:bg-gradient-to-br sm:from-blue-50 sm:to-cyan-50 -mx-4 sm:-mx-8 md:-mx-10 px-4 sm:px-8 md:px-10 pb-3 sm:pb-4 -mb-4 sm:-mb-8 md:-mb-10 rounded-b-none sm:rounded-b-[1.75rem]">
             <div className="flex justify-between items-center">
               <span className="text-muted-foreground text-xs sm:text-base">Оплатить до:</span>
               <span className="font-semibold text-foreground text-xs sm:text-base">{paymentDate}</span>
