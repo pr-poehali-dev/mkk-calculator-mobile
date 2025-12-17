@@ -34,9 +34,9 @@ export default function LoanCalculator() {
   };
 
   return (
-    <div className="w-full bg-gradient-to-br from-blue-50 via-blue-100/50 to-cyan-50 py-0 px-0 sm:py-8 sm:px-4">
-      <div className="w-full max-w-xl mx-auto">
-        <div className="bg-white rounded-[1.25rem] sm:rounded-[1.75rem] shadow-lg sm:shadow-xl sm:shadow-2xl p-4 sm:p-8 md:p-10 space-y-5 sm:space-y-8 border-2 border-white">
+    <div className="w-full min-h-screen bg-gradient-to-br from-blue-50 via-blue-100/50 to-cyan-50 flex items-center justify-center py-0 px-0 sm:py-8 sm:px-8">
+      <div className="w-full sm:max-w-2xl">
+        <div className="bg-white rounded-[1.25rem] sm:rounded-[2rem] shadow-lg sm:shadow-xl sm:shadow-2xl p-4 sm:p-10 md:p-12 space-y-5 sm:space-y-8 border-2 border-white">
           <div className="space-y-4 sm:space-y-8">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1.5 sm:gap-0">
               <h2 className="text-base sm:text-2xl md:text-3xl font-medium text-foreground leading-tight">Выберите сумму</h2>
