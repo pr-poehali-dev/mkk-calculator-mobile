@@ -34,19 +34,19 @@ export default function LoanCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-transparent flex items-center justify-center py-4 px-3 sm:p-6 md:p-8">
+    <div className="min-h-screen bg-transparent flex items-center justify-center py-3 px-2.5 sm:p-6 md:p-8">
       <div className="w-full max-w-xl">
-        <div className="bg-card rounded-[1.25rem] sm:rounded-[2rem] shadow-xl sm:shadow-2xl p-5 sm:p-8 md:p-12 space-y-6 sm:space-y-10">
-          <div className="space-y-5 sm:space-y-8">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-0">
-              <h2 className="text-lg sm:text-2xl md:text-3xl font-normal text-foreground leading-tight">Выберите сумму</h2>
+        <div className="bg-card rounded-[1rem] sm:rounded-[1.75rem] shadow-lg sm:shadow-2xl p-4 sm:p-8 md:p-12 space-y-5 sm:space-y-10 border border-border/50">
+          <div className="space-y-4 sm:space-y-8">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1.5 sm:gap-0">
+              <h2 className="text-base sm:text-2xl md:text-3xl font-medium text-foreground leading-tight">Выберите сумму</h2>
               <div className="text-left sm:text-right">
-                <span className="text-2xl sm:text-3xl md:text-4xl font-normal text-foreground">{formatAmount(loanAmount)} руб</span>
+                <span className="text-xl sm:text-3xl md:text-4xl font-semibold text-primary">{formatAmount(loanAmount)} руб</span>
               </div>
             </div>
             
             <div className="space-y-2 sm:space-y-3 touch-none">
-              <div className="py-2">
+              <div className="py-1.5">
                 <Slider
                   value={[loanAmount]}
                   onValueChange={(value) => setLoanAmount(value[0])}
@@ -63,16 +63,16 @@ export default function LoanCalculator() {
             </div>
           </div>
 
-          <div className="space-y-5 sm:space-y-8">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-0">
-              <h2 className="text-lg sm:text-2xl md:text-3xl font-normal text-foreground leading-tight">Выберите срок</h2>
+          <div className="space-y-4 sm:space-y-8">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1.5 sm:gap-0">
+              <h2 className="text-base sm:text-2xl md:text-3xl font-medium text-foreground leading-tight">Выберите срок</h2>
               <div className="text-left sm:text-right">
-                <span className="text-2xl sm:text-3xl md:text-4xl font-normal text-foreground">{loanTerm} {getMonthText(loanTerm)}</span>
+                <span className="text-xl sm:text-3xl md:text-4xl font-semibold text-primary">{loanTerm} {getMonthText(loanTerm)}</span>
               </div>
             </div>
             
             <div className="space-y-2 sm:space-y-3 touch-none">
-              <div className="py-2">
+              <div className="py-1.5">
                 <Slider
                   value={[loanTerm]}
                   onValueChange={(value) => setLoanTerm(value[0])}
@@ -91,24 +91,24 @@ export default function LoanCalculator() {
 
           <Button 
             size="lg" 
-            className="w-full h-16 sm:h-16 text-lg sm:text-xl rounded-full shadow-lg hover:shadow-xl transition-all font-normal active:scale-[0.98] touch-manipulation"
+            className="w-full h-14 sm:h-16 text-base sm:text-xl rounded-full shadow-md hover:shadow-lg transition-all font-medium active:scale-[0.97] touch-manipulation bg-primary hover:bg-primary/90"
             onClick={() => window.open('https://tuchkafinance.ru/applicationform', '_blank')}
           >
             Получить деньги
           </Button>
 
-          <div className="space-y-2.5 sm:space-y-3 pt-1 sm:pt-4">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-0.5 sm:gap-0">
-              <span className="text-muted-foreground text-sm sm:text-lg">Оплатить до:</span>
-              <span className="font-semibold text-foreground text-sm sm:text-lg">{paymentDate}</span>
+          <div className="space-y-2 sm:space-y-3 pt-0.5 sm:pt-4 bg-secondary/30 -mx-4 sm:-mx-8 md:-mx-12 px-4 sm:px-8 md:px-12 py-3 sm:py-4 rounded-b-[1rem] sm:rounded-b-[1.75rem]">
+            <div className="flex justify-between items-center">
+              <span className="text-muted-foreground text-xs sm:text-base">Оплатить до:</span>
+              <span className="font-semibold text-foreground text-xs sm:text-base">{paymentDate}</span>
             </div>
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-0.5 sm:gap-0">
-              <span className="text-muted-foreground text-sm sm:text-lg">Платеж раз в месяц:</span>
-              <span className="font-semibold text-foreground text-sm sm:text-lg">{formatAmount(Math.round(monthlyPayment))} руб</span>
+            <div className="flex justify-between items-center">
+              <span className="text-muted-foreground text-xs sm:text-base">Платеж раз в месяц:</span>
+              <span className="font-bold text-primary text-sm sm:text-lg">{formatAmount(Math.round(monthlyPayment))} руб</span>
             </div>
             <a 
               href="#" 
-              className="inline-block text-primary hover:underline text-xs sm:text-base mt-1 sm:mt-2 touch-manipulation"
+              className="inline-block text-primary hover:underline text-xs sm:text-sm mt-1 touch-manipulation font-medium"
               onClick={(e) => e.preventDefault()}
             >
               Правила и тарифы
