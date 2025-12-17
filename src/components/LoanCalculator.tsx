@@ -34,7 +34,7 @@ export default function LoanCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background to-secondary/30 flex items-center justify-center p-3 sm:p-4 md:p-6">
+    <div className="min-h-screen bg-transparent flex items-center justify-center p-3 sm:p-4 md:p-6">
       <div className="w-full max-w-xl">
         <div className="bg-card rounded-[1.5rem] sm:rounded-[2rem] shadow-2xl p-6 sm:p-8 md:p-12 space-y-8 sm:space-y-10">
           <div className="space-y-6 sm:space-y-8">
