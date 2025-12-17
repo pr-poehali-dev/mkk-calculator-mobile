@@ -34,9 +34,9 @@ export default function LoanCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-transparent flex items-start sm:items-center justify-center px-2.5 pt-0 pb-0 sm:p-6 md:p-8">
-      <div className="w-full max-w-xl">
-        <div className="bg-card rounded-[1rem] sm:rounded-[1.75rem] shadow-lg sm:shadow-2xl p-4 sm:p-8 md:p-12 space-y-5 sm:space-y-10 border border-border/50">
+    <div className="w-full bg-transparent py-4 px-2.5 sm:py-8 sm:px-4">
+      <div className="w-full max-w-xl mx-auto">
+        <div className="bg-card rounded-[1rem] sm:rounded-[1.75rem] shadow-lg sm:shadow-2xl p-4 sm:p-8 md:p-10 space-y-5 sm:space-y-8 border border-border/50">
           <div className="space-y-4 sm:space-y-8">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1.5 sm:gap-0">
               <h2 className="text-base sm:text-2xl md:text-3xl font-medium text-foreground leading-tight">Выберите сумму</h2>
