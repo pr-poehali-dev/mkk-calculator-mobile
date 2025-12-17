@@ -130,7 +130,7 @@ const Code = () => {
 }
 
 .info-section {
-  background: linear-gradient(135deg, #eff6ff 0%, #ecfeff 100%);
+  background: #ffffff;
   padding: 20px;
   border-radius: 0 0 20px 20px;
   margin: 25px -20px -30px -20px;

@@ -97,7 +97,7 @@ export default function LoanCalculator() {
             Получить деньги
           </Button>
 
-          <div className="space-y-2 sm:space-y-3 pt-0.5 sm:pt-4 bg-gradient-to-br from-blue-50/50 to-cyan-50/50 sm:from-blue-50 sm:to-cyan-50 -mx-4 sm:-mx-8 md:-mx-10 px-4 sm:px-8 md:px-10 pb-3 sm:pb-4 -mb-4 sm:-mb-8 md:-mb-10 rounded-b-[1.25rem] sm:rounded-b-[1.75rem]">
+          <div className="space-y-2 sm:space-y-3 pt-0.5 sm:pt-4 bg-white -mx-4 sm:-mx-8 md:-mx-10 px-4 sm:px-8 md:px-10 pb-3 sm:pb-4 -mb-4 sm:-mb-8 md:-mb-10 rounded-b-[1.25rem] sm:rounded-b-[1.75rem]">
             <div className="flex justify-between items-center">
               <span className="text-muted-foreground text-xs sm:text-base">Оплатить до:</span>
               <span className="font-semibold text-foreground text-xs sm:text-base">{paymentDate}</span>
