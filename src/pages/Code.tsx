@@ -16,14 +16,18 @@ const Code = () => {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(135deg, #eff6ff 0%, #e0f2fe 50%, #ecfeff 100%);
   width: 100%;
-  padding: 20px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .calculator-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 672px;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 32px;
 }
 
 .calculator-card {
@@ -31,7 +35,14 @@ const Code = () => {
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   padding: 30px 20px;
-  border: 1px solid rgba(147, 197, 253, 0.6);
+  border: 2px solid #ffffff;
+}
+
+@media (min-width: 640px) {
+  .calculator-card {
+    border-radius: 32px;
+    padding: 40px 48px;
+  }
 }
 
 .section {
